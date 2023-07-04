@@ -1,0 +1,28 @@
+
+
+.editor {
+    padding-top: 79.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    &__title {
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        color: $editor-color;
+        font-size: 26px;
+        font-family: $font-Montserrat;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 28px;
+        text-transform: uppercase;
+        padding-bottom: 27px;
+    }
+    &-btn {
+        display: inline-block;
+        overflow: visible !important;
+        vertical-align: text-bottom;
+        fill: currentColor;
+    }
+}
+
