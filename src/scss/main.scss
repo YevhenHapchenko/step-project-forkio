@@ -1,5 +1,5 @@
-@import './mixins';
-@import './vars';
+@import 'mixins';
+@import 'vars';
 
 .wrapper {
   padding-left: 10px;
@@ -18,7 +18,8 @@
 @import 'content/header';
 @import 'content/header-main-section';
 @import 'content/comments-section';
+@import 'content/revolution-section';
+@import 'content/get-section';
+@import 'content/fork-section';
 
-.test{
-  font-size: 13px;
-}
+
