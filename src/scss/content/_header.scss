@@ -5,12 +5,38 @@
     background-image: url(../imgs/header/headerBackground.png);
     background-position-x: center;
     text-align:center;
-
+    
     &__top-line{
         background-color: #27262A;
         padding:40px 10px;
         display: flex;
         justify-content: space-between;
+        
+    }
+    &__top-line-button{
+        position: relative;
+        width: 30px;
+    }
+
+    &__top-line-button .bar {
+        display: block;
+        width: 30px;
+        height: 3px;
+        margin: 6px auto;
+        background-color: #fff;
+        transition: 0.2s;
+    }
+
+    &__top-line-button.active .bar:nth-child(2) {
+        opacity: 0;
+      }
+    
+    &__top-line-button.active .bar:nth-child(1) {
+        transform: translateY(9px) rotate(45deg);
+    }
+    
+    &__top-line-button.active .bar:nth-child(3) {
+        transform: translateY(-9px) rotate(-45deg);
     }
 
     &__buy-button, &__download-button{
@@ -49,11 +75,6 @@
             }
         } 
 
-        &-button{
-            background: transparent;
-            border:none;
-            outline:none;
-        }
 
         &-icon{
             width:20px;
@@ -135,6 +156,10 @@
             padding:20px 10px 60px 10px;
         }
 
+        &__top-line-button{
+            display: none;
+        }
+        
         &__menu{
             display:flex;
             justify-content:space-between;
@@ -152,6 +177,8 @@
             &-button{
                 display:none;
             }
+
+           
 
             &-item{
                 padding:0;
@@ -239,7 +266,6 @@
             &:hover{
                 background:white;
                 color:#8D81AC;
-                border:1px solid $main-color;
             }
         }
     }

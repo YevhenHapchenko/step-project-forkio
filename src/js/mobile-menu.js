@@ -1,35 +1,21 @@
+const hamb = document.querySelector(".header__top-line-button");
 const menu = document.querySelector('.header__menu');
-const menuButton = document.querySelector('.header__menu-button');
-const menuIcon = document.querySelector('#open-icon');
 
-function changeIconToClose() {
-    if (menuIcon.src === "dist/imgs/header/menu-icon.png") {
-        menuIcon.src = "dist/imgs/header/close-icon.png";
-        console.log(menuIcon.src)
-    }
+hamb.addEventListener("click", hambHandler);
+
+function hambHandler(e) {
+    e.preventDefault();
+    hamb.classList.toggle("active");
+    menu.classList.toggle('header__menu--hidden');
 }
 
-function changeIconToBurger() {
-    if (menuIcon.src === "dist/imgs/header/close-icon.png") {
-        menuIcon.src = "dist/imgs/header/menu-icon.png";
-        console.log(menuIcon.src)
-    }
+const links = Array.from(menu.children);
+
+links.forEach((link) => {
+    link.addEventListener("click", closeOnClick);
+  });
+
+function closeOnClick() {
+    hamb.classList.remove("active");
+    menu.classList.remove('header__menu--hidden');
 }
-
-menuButton.addEventListener('click', function(event) {
-    if (!menu.classList.contains('header__menu--hidden')) {
-        menu.classList.toggle('header__menu--hidden');
-        changeIconToBurger();
-    }
-    else {
-        menu.classList.toggle('header__menu--hidden');
-        changeIconToClose();
-    }
-})
-
-document.addEventListener('click', function(event) {
-    if (event.target.className !== 'header__menu-item' && event.target.className !== 'header__menu-button' && event.target.className !== 'header__menu-icon') {
-        menu.classList.add('header__menu--hidden');
-        changeIconToBurger();
-    }
-})
