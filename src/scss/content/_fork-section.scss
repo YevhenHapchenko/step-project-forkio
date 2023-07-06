@@ -47,7 +47,6 @@
         } 
     }
     &__choose {
-       
         box-sizing: border-box;
         background-color: $heading-color;
         display: flex;
@@ -67,6 +66,10 @@
             padding: 0;
             font-size: 24px;
             text-transform: uppercase;
+        }
+        &-heading {
+            font-family: $font-Montserrat;
+            font-weight: 400;
         }
     }
     &__purchase {
@@ -135,7 +138,6 @@
             font-weight: 400;
             line-height: 18px;
             list-style-type: none;
-            
         }
     }
     &__details--option {
@@ -157,8 +159,7 @@
             font-style: normal;
             font-weight: 400;
             list-style-type: none;
-           
-       }
+        }
     }
 }
 
@@ -172,7 +173,6 @@
             align-content: center;
             align-items: end;
         }
-        
         &__base {
             padding: 0;
             width: 100%;
@@ -189,6 +189,7 @@
         &__title {
             padding-top: 88px;
             padding-bottom: 39px;
+            line-height: 44px;
         }
         &__details--option{
             & .fork__details-support {
@@ -210,5 +211,9 @@
             align-content: center;
             align-items: center;
         }
-}
+        &__title {
+            padding-bottom: 60px;
+            line-height: 50px;
+        }
+    }
 }
