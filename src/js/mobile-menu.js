@@ -3,15 +3,15 @@ const menuButton = document.querySelector('.header__menu-button');
 const menuIcon = document.querySelector('#open-icon');
 
 function changeIconToClose() {
-    if (menuIcon.src === "https://anthrasher.gitlab.io/step-project-forkio/dist/imgs/header/menu-icon.png") {
-        menuIcon.src = "https://anthrasher.gitlab.io/step-project-forkio/dist/imgs/header/close-icon.png";
+    if (menuIcon.src === "dist/imgs/header/menu-icon.png") {
+        menuIcon.src = "dist/imgs/header/close-icon.png";
         console.log(menuIcon.src)
     }
 }
 
 function changeIconToBurger() {
-    if (menuIcon.src === "https://anthrasher.gitlab.io/step-project-forkio/dist/imgs/header/close-icon.png") {
-        menuIcon.src = "https://anthrasher.gitlab.io/step-project-forkio/dist/imgs/header/menu-icon.png";
+    if (menuIcon.src === "dist/imgs/header/close-icon.png") {
+        menuIcon.src = "dist/imgs/header/menu-icon.png";
         console.log(menuIcon.src)
     }
 }
