@@ -8,8 +8,8 @@
 <link rel="stylesheet" href="reset.min.css">
     <link rel="stylesheet" href="dist/css/style.min.css">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,700&family=Montserrat:wght@300;400;700&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;0,700;1,300;1,700&family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
+        
     <title>Forkio</title>
 </head>
 
@@ -39,24 +39,67 @@
     <p class="header__trial">Unlimited 30-Days Trial Period</p>
 </header>
 
-<section class="editor">
-    <div class="editor__container">
+<section class="editor wrapper">
+    <div class="editor__icon">
         <h1 class="editor__title">Revolutionary editor</h1>
         <p class="editor__text">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
         <div class="editor__btn">
-            <ul>
-                <li class="editor-btn"><a class="editor-btn__link" href="#"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-eye mr-2">
-                    <path d="M8 2c1.981 0 3.671.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.62 1.62 0 0 1 0 1.798c-.45.678-1.367 1.932-2.637 3.023C11.67 13.008 9.981 14 8 14c-1.981 0-3.671-.992-4.933-2.078C1.797 10.83.88 9.576.43 8.898a1.62 1.62 0 0 1 0-1.798c.45-.677 1.367-1.931 2.637-3.022C4.33 2.992 6.019 2 8 2ZM1.679 7.932a.12.12 0 0 0 0 .136c.411.622 1.241 1.75 2.366 2.717C5.176 11.758 6.527 12.5 8 12.5c1.473 0 2.825-.742 3.955-1.715 1.124-.967 1.954-2.096 2.366-2.717a.12.12 0 0 0 0-.136c-.412-.621-1.242-1.75-2.366-2.717C10.824 4.242 9.473 3.5 8 3.5c-1.473 0-2.825.742-3.955 1.715-1.124.967-1.954 2.096-2.366 2.717ZM8 10a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 10Z"></path>
-                </svg></a></li>
-                <li class="editor-btn"><a class="editor-btn__link" href="#"><img class="editor-btn__icon" src="" alt=""></a></li>
-                <li class="editor-btn"><a class="editor-btn__link" href="#"><img class="editor-btn__icon" src="" alt=""></a></li>
-            </ul>
-
+        
+            <button class="editor-btn" href="#"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-eye mr-2">
+                <path d="M8 2c1.981 0 3.671.992 4.933 2.078 1.27 1.091 2.187 2.345 2.637 3.023a1.62 1.62 0 0 1 0 1.798c-.45.678-1.367 1.932-2.637 3.023C11.67 13.008 9.981 14 8 14c-1.981 0-3.671-.992-4.933-2.078C1.797 10.83.88 9.576.43 8.898a1.62 1.62 0 0 1 0-1.798c.45-.677 1.367-1.931 2.637-3.022C4.33 2.992 6.019 2 8 2ZM1.679 7.932a.12.12 0 0 0 0 .136c.411.622 1.241 1.75 2.366 2.717C5.176 11.758 6.527 12.5 8 12.5c1.473 0 2.825-.742 3.955-1.715 1.124-.967 1.954-2.096 2.366-2.717a.12.12 0 0 0 0-.136c-.412-.621-1.242-1.75-2.366-2.717C10.824 4.242 9.473 3.5 8 3.5c-1.473 0-2.825.742-3.955 1.715-1.124.967-1.954 2.096-2.366 2.717ZM8 10a2 2 0 1 1-.001-3.999A2 2 0 0 1 8 10Z"></path>
+                </svg>Watch <span class="editor-btn__number"> 1,397</span></button>
+            <button class="editor-btn" href="#"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-star mr-2">
+                <path d="M8 .25a.75.75 0 0 1 .673.418l1.882 3.815 4.21.612a.75.75 0 0 1 .416 1.279l-3.046 2.97.719 4.192a.751.751 0 0 1-1.088.791L8 12.347l-3.766 1.98a.75.75 0 0 1-1.088-.79l.72-4.194L.818 6.374a.75.75 0 0 1 .416-1.28l4.21-.611L7.327.668A.75.75 0 0 1 8 .25Zm0 2.445L6.615 5.5a.75.75 0 0 1-.564.41l-3.097.45 2.24 2.184a.75.75 0 0 1 .216.664l-.528 3.084 2.769-1.456a.75.75 0 0 1 .698 0l2.77 1.456-.53-3.084a.75.75 0 0 1 .216-.664l2.24-2.183-3.096-.45a.75.75 0 0 1-.564-.41L8 2.694Z"></path>
+            </svg>Star <span class="editor-btn__number">21,038</span></button>
+            
+            <button class="editor-btn" href="#"><svg aria-hidden="true" height="16" viewBox="0 0 16 16" version="1.1" width="16" data-view-component="true" class="octicon octicon-repo-forked mr-2">
+                <path d="M5 5.372v.878c0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75v-.878a2.25 2.25 0 1 1 1.5 0v.878a2.25 2.25 0 0 1-2.25 2.25h-1.5v2.128a2.251 2.251 0 1 1-1.5 0V8.5h-1.5A2.25 2.25 0 0 1 3.5 6.25v-.878a2.25 2.25 0 1 1 1.5 0ZM5 3.25a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Zm6.75.75a.75.75 0 1 0 0-1.5.75.75 0 0 0 0 1.5Zm-3 8.75a.75.75 0 1 0-1.5 0 .75.75 0 0 0 1.5 0Z"></path></svg>Fork <span class="editor-btn__number">4,391</span></button>
         </div>
-
-
     </div>
-
+</section>
+<section class="get">
+<div class="get__container container">
+    <h1 class="get__title">< Here is what you get ></h1>
+    <div class="get__content">
+        <div class="get__post">
+            <img src="./dist/imgs/get-section/icon1 3.png" alt="">
+            <div class="get__post-wrapper">
+            <h2 class="get__post-name">Creatred to Make The Web Better</h2>
+            <p class="get__post-text"">Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue.</p>
+        </div>
+        </div>
+        <div class="get__post">
+            <div class="get__post-img">
+           <img  src="./dist/imgs/get-section/icon 4.png" alt="">
+        </div>
+            <div class="get__post-wrapper">
+            <h2 class="get__post-name">Incredibly Powerful Tool</h2>
+            <p class="get__post-text"">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.</p>
+        </div>
+    </div>
+        <div class="get__post">
+            <div class="get__post-img">
+            <img  src="./dist/imgs/get-section/icon2 3.png" alt="">
+        </div>
+            <div class="get__post-wrapper">
+            <h2 class="get__post-name">Experimental Stuff</h2>
+            <p class="get__post-text"">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.</p>
+        </div>
+    </div>
+        <div class="get__post">
+            <div class="get__post-img">
+            <img src="./dist/imgs/get-section/icon33 3.png" alt="">
+        </div>
+            <div class="get__post-wrapper">
+            <h2 class="get__post-name">Creatred to Make The Web Better</h2>
+            <p class="get__post-text">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat.</p>
+        </div>
+        </div>
+    </div>
+        <div class="get__window">
+            <img class="get__window-doctype" src="./dist/imgs/get-section/editor 1.png" alt="">
+        </div>
+    </div>
 </section>
 
 <section class="comments">
@@ -89,6 +132,73 @@
         </div>
     </div>
     <p class="comments__details">Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. </p>
+    </div>
+</section>
+
+<section class="fork">
+    <div class="fork__container container">
+        <h1 class="fork__title">Fork Subscription Pricing</h1>
+        <div class="fork__content">
+          
+         <div class="fork__base">
+                <div class="fork__choose">
+                <h2 class="fork__choose-heading">Students</h2>
+                </div>
+                <div class="fork__details">
+                    <p class="fork__details-price">$<span class="fork__details-number">29</span></p>
+                    <p class="fork__details-month">per month</p>
+                    <ul>
+                        <li class="fork__details fork__details-prof">Personal License</li>
+                        
+                    </ul>
+                <button class="fork__purchase">purchase</button>
+                </div>
+            </div> 
+            <div class="fork__base">
+                <div class="fork__choose">
+                <h2 class="fork__choose-heading">professional</h2>
+                </div>
+                <div class="fork__details">
+                    <p class="fork__details-price">$<span class="fork__details-number">59</span></p>
+                    <p class="fork__details-month">per month</p>
+                    <ul>
+                        <li class="fork__details fork__details-prof">Professional License</li>
+                        <li class="fork__details fork__details-prof">Email Support</li>
+                    </ul>
+                <button class="fork__purchase">purchase</button>
+                </div>
+            </div>
+
+            <div class="fork__main">
+                <div class="fork__choose fork__choose-color">
+                <h2 class="fork__choose-heading">agency</h2>
+                </div>
+                <div class="fork__details fork__details--option">
+                    <p class="fork__details-price">$<span class="fork__details-number">99</span></p>
+                    <p class="fork__details-month">per month</p>
+                    <ul>
+                        <li class="fork__details-support">1-12 Team Members</li>
+                        <li class="fork__details-support">Phone Support</li>
+                    </ul>
+                <button class="fork__purchase">purchase</button>
+                </div>
+            </div>
+            
+            <div class="fork__base">
+                <div class="fork__choose">
+                <h2 class="fork__choose-heading">enterprise</h2>
+                </div>
+                <div class="fork__details">
+                    <p class="fork__details-price">$<span class="fork__details-number">159</span></p>
+                    <p class="fork__details-month">per month</p>
+                    <ul>
+                        <li class="fork__details fork__details-prof">Unlimited Team Members</li>
+                        <li class="fork__details fork__details-prof">24/ 7 Phone Support</li>
+                    </ul>
+                <button class="fork__purchase">purchase</button>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 
