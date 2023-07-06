@@ -28,10 +28,8 @@
         gap: 18px;
     }
     &__base {
-        
         max-width: 257px;
         min-width: 257px;
-
     }
     &__main {
         padding-bottom: 18px;
@@ -47,7 +45,6 @@
         } 
     }
     &__choose {
-       
         box-sizing: border-box;
         background-color: $heading-color;
         display: flex;
@@ -67,6 +64,10 @@
             padding: 0;
             font-size: 24px;
             text-transform: uppercase;
+        }
+        &-heading {
+            font-family: $font-Montserrat;
+            font-weight: 400;
         }
     }
     &__purchase {
@@ -172,7 +173,6 @@
             align-content: center;
             align-items: end;
         }
-        
         &__base {
             padding: 0;
             width: 100%;
@@ -189,6 +189,7 @@
         &__title {
             padding-top: 88px;
             padding-bottom: 39px;
+            line-height: 44px;
         }
         &__details--option{
             & .fork__details-support {
@@ -210,5 +211,8 @@
             align-content: center;
             align-items: center;
         }
-}
+        &__title {
+            line-height: 50px;
+        }
+    }
 }
