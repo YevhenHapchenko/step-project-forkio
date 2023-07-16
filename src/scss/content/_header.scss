@@ -2,8 +2,9 @@
     font-family:'Montserrat', sans-serif;
     box-sizing: border-box;
     position:relative;
-    background-image: url(../imgs/header/headerBackground.png);
+    background: url(../imgs/header/headerBackground.png) no-repeat;
     background-position-x: center;
+    background-size: cover;
     text-align:center;
     
     &__top-line{
@@ -11,7 +12,6 @@
         padding:40px 10px;
         display: flex;
         justify-content: space-between;
-        
     }
     &__top-line-button{
         position: relative;
@@ -39,6 +39,20 @@
         transform: translateY(-9px) rotate(-45deg);
     }
 
+    &__logo{
+        position: relative;
+        display:flex;
+        align-items:center; 
+        text-decoration:none;
+    }
+
+    &__logo::before{
+        content: '';
+        width: 43px;
+        height: 41px;
+        background-image: url("/dist/imgs/header/logoForkio.png");
+    }
+
     &__buy-button, &__download-button{
         border-radius:40px;
         border:none;
@@ -48,17 +62,19 @@
         font-weight: bold;
         text-transform: capitalize;   
         box-sizing:border-box;
+        cursor: pointer;
     }
 
     &__menu{
         position:absolute;
+        display:none;
         top:124px;
         left:10px;
         width:calc(100% - 20px);
         background:#333333;
 
         &--hidden{
-            display:none;
+            display: block;
         }
         
         
@@ -74,16 +90,6 @@
                 border-left:8px solid $main-color;
             }
         } 
-
-
-        &-icon{
-            width:20px;
-            height:20px;
-
-            &--hidden{
-                display:none;
-            }
-        }
 
         &-link{
             font-size:26px;
@@ -151,6 +157,12 @@
             align-items:center; 
             text-decoration:none;
         }
+        &__logo::before{
+            content: '';
+            width: 43px;
+            height: 41px;
+            background-image: url("/dist/imgs/header/logoForkio.png");
+        }
 
         &__top-line{
             padding:20px 10px 60px 10px;
@@ -181,7 +193,7 @@
            
 
             &-item{
-                padding:0;
+                padding:2px 0;
                 border:0;
 
                 &:focus, &:active{
@@ -233,9 +245,22 @@
         }
 
         &__logo{
+                position: relative;
+            &::before{
+                content: "";
+                width: 43px;
+                height: 41px;
+                background-image: url("/dist/imgs/header/logoForkio.png");
+            }
             &:hover{
                 & .logo__title{
                     color:white;
+                }
+                &::before{
+                    content: "";
+                    width: 43px;
+                    height: 41px;
+                    background-image: url("/dist/imgs/header/logo-hover 1.png");
                 }
             }
         }
