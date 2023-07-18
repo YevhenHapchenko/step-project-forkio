@@ -63,6 +63,7 @@
         text-transform: capitalize;   
         box-sizing:border-box;
         cursor: pointer;
+        border: 2px solid transparent;
     }
 
     &__menu{
@@ -291,6 +292,7 @@
             &:hover{
                 background:white;
                 color:#8D81AC;
+                border: 2px solid #8D81AC;
             }
         }
     }
